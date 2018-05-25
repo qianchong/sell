@@ -17,5 +17,10 @@ import java.util.List;
  * Modified By:
  */
 public interface ProductInfoDao extends JpaRepository<ProductInfo, String> {
+    /**
+     * 按状态查商品
+     * @param productStatus
+     * @return
+     */
     List<ProductInfo> findByProductStatus(Integer productStatus);
 }

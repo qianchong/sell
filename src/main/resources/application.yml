@@ -8,7 +8,9 @@ spring:
     show-sql: true
     hibernate:
       ddl-auto: update
-
+server:
+  servlet:
+    context-path: /sell
 
 
 #    logging:
